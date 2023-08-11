@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transaction Successful</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('stockpic2.png'); 
+  }
+  .container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    height: 55%;
+  }
+  .icon {
+    color: #4caf50;
+    font-size: 64px;
+  }
+  h1 {
+    margin-top: 20px;
+    color: #333333;
+  }
+  p {
+    margin-top: 10px;
+    color: #666666;
+  }
+  .ok-button {
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.ok-button:hover {
+  background-color: #45a049;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="icon">&#10004;</div>
+  <h1>Transaction Successful</h1>
+  <p>Your payment was successfully processed.</p>
+  <a href="LoginPage.html"><button class="ok-button">OK</button></a>
+</div>
+<script>
+    // Get a reference to the OK button
+    const okButton = document.querySelector(".ok-button");
+  
+    // Add a click event listener to the OK button
+    okButton.addEventListener("click", function() {
+      // Close the window/tab when the OK button is clicked
+      window.close();
+    });
+  </script>
+</body>
+</html>

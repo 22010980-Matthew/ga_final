@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to top, rgb(85, 5, 85), rgb(0, 0, 0));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* Add a black background colour to the nav bar and sizing of nav bar */
+nav{
+    background-color: black;
+    background-blend-mode: normal;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+
+    list-style: none;
+    margin: 0 20px;
+    display: inline-block;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline-style: 0;
+    border-radius: 5px;
+    background: turquoise;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+nav ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: greenyellow;
+    display: block;
+    margin: auto;
+    transition-duration: 0.5s;
+}
+nav ul li:hover::after{
+    width:100%;
+
+}
+
+.header nav .button-link button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+p{
+    padding:0%;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+h1{
+    padding:0%;
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    text-decoration: solid;
+}
+.courses {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+}
+
+.courses img {
+   width:300px;
+   margin-right: 30px;
+   background-size: cover;
+   background-position: center;
+}
+
+.courses .details{
+    padding: 20px;
+}
+.courses .details h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+
+

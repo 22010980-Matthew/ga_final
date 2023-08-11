@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create Account</title>
+  <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+  <nav>
+    <a href="Homepage.html"><img src="ga369logo.png"></a>
+    <ul>
+      <li><a href ="https://www.tradingview.com/markets/">MARKET</a></li>
+      <li><a href ="Features.html">FEATURES</a></li>
+      <li><a href ="Learn.html">LEARN</a></li>
+      <li><a href ="About.html">CONTACT </a></li>
+    </ul>
+    <a href="account.html" class="button-link">
+      <button class="button-link">OPEN ACCOUNT</button>
+    </a>     
+  </nav>
+  <div class="create-box">
+    <h1>New Account</h1>
+
+    <form id="createAccountForm" action="submit_account.php" method="post">
+    <label for="full_name">Full Name:</label>
+    <input type="text" id="full_name" name="full_name" required><br><br>
+
+    <label for="id_number">Identification Number:</label>
+    <input type="text" id="id_number" name="id_number" required><br><br>
+
+    <label for="phone_number">Phone Number:</label>
+    <input type="text" id="phone_number" name="phone_number" required><br><br>
+
+    <label for="country">Country of Residency:</label>
+    <select id="country" name="country" required>
+      <option value="sg">Singapore</option>
+      <option value="us">United States</option>
+      <option value="uk">United Kingdom</option>
+      <option value="ca">Canada</option>
+      <option value="ca">Australia</option>
+      <option value="jp">Japan</option>
+      <option value="ch">China</option>
+    </select><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="2" required></textarea><br><br>
+
+    <button type="submit" class="submit-button" id="createAccountButton">Create Account</button>
+  </form>
+
+  <p>By clicking the Create Account button, you agree to our <br>
+  <a href="#">Terms and Conditions</a> and <a href="#">Privacy and Policy</a>
+  </p>
+  </div>
+  <script>
+     document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("createAccountForm");
+    const createAccountButton = document.getElementById("createAccountButton");
+
+    form.addEventListener("submit", function(event) {
+      // Prevent the form from submitting immediately
+      event.preventDefault();
+
+      // If user submits the form, redirect to the desired page
+      window.location.href = "authentication.html"; 
+    });
+  });
+
+  </script>
+
+ 
+
+  <footer>
+    <p>&copy; 2023 8EXCHANGE. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
