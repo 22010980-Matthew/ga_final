@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authentication Code</title>
+    <link rel="stylesheet" href="authentication.css">
+    <style>
+    </style>
+</head>
+<body>
+    <section class ="header">
+        <nav>
+          <a href="Homepage.html"><img src="ga369logo.png"></a>
+          <ul>
+            <li><a href ="https://www.tradingview.com/markets/">MARKET</a></li>
+            <li><a href ="Features.html">FEATURES</a></li>
+            <li><a href ="Learn.html">LEARN</a></li>
+            <li><a href ="About.html">CONTACT </a></li>
+            
+          </ul>    
+        </nav>
+    <div class="auth-container">
+        <h2>Authentication Code</h2>
+        <p>A 6 digits authentication code has been sent to your number.</p>
+        <form action="verify_code.php" method="post" id="authForm">
+            <input class="auth-input" type="text" name="code" placeholder="Enter Code" required><br>
+            <button class="auth-button" type="submit">Verify Code</button>
+        </form>
+        <p id="errorMessage" style="color: red;"></p>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const authForm = document.getElementById("authForm");
+        const errorMessage = document.getElementById("errorMessage");
+
+        authForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Simulating a response from the server
+            const serverResponse = "correct"; 
+            
+            if (serverResponse === "correct") {
+                // Redirect to the success page
+                window.location.href = "transactionsuccs.html"; 
+            } else {
+                errorMessage.textContent = "Incorrect code. Please try again.";
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

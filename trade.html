@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transaction Successful</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('stockpic2.png'); 
+  }
+  .payment-authentication {
+    text-align: center;
+    background-color: #000000b1;
+    padding: 70px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  p {
+    margin-top: 10px;
+    color: #ffffff;
+  }
+  .CONFRIM {
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.CONFRIM:hover {
+  background-color: #45a049;
+}
+
+</style>
+</head>
+<body>
+    <section class ="header">
+       
+    <div class="payment-authentication">
+        <h2>Payment</h2>
+        <p>Scan the paynow code to complete trade</p>
+        <img src="paynow.jpg">
+        <button id="confirmButton"class="CONFIRM">Confirm</button>
+    </div>
+    </section>
+    <script>
+        // Get a reference to the Confirm button
+        const confirmButton = document.getElementById("confirmButton");
+        
+        // Add a click event listener to the Confirm button
+        confirmButton.addEventListener("click", function() {
+            // Redirect to the authentication2.html page
+            window.location.href = "authentication2.html";
+        });
+    </script>
+</body>
+</html>
